@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-primary: #191d2b;
+    --color-primary: #000000;
     --color-secondary: #2a58da;
     --color-white: #FFFFFF;
     --color-black: #000;
@@ -188,9 +188,12 @@ section {
         flex-direction: column;
         justify-content: center;
         padding-right: 18rem;
-        .name {
+        .name{
             font-size: 3rem;
-            span { color: var(--color-secondary); }
+            span{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: var(--color-secondary);
+            }
         }
         p {
             margin: 1.5rem 0;
@@ -300,10 +303,12 @@ section {
                     }
                     .html { width: 80%; }
                     .css { width: 95%; }
-                    .js { width: 75%; }
-                    .react{ width: 60%; }
-                    .node{ width: 87%; }
-                    .python{ width: 70%; }
+                    .js { width: 90%; }
+                    .react{ width: 85%; }
+                    .node{ width: 90%; }
+                    .python{ width: 75%; }
+                    .mongodb{ width: 80%; }
+                    .mysql{ width: 80%; }
                     .data-science{ width: 55%; }
                     .java{ width: 65%; }
                 }
@@ -339,6 +344,11 @@ section {
         position: relative;
         padding-left: 3rem;
         border-left: 1px solid var(--color-grey-5);
+        .list{
+            color: var(--color-grey-2);
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
         .tl-icon {
             position: absolute;
             left: -27px;
@@ -366,7 +376,7 @@ section {
             text-transform: uppercase;
             font-size: 1.3rem;
             font-weight: 600;
-            span {
+            span{
                 color: var(--color-grey-2);
                 font-weight: 500;
                 font-size: 1.2rem;
@@ -513,6 +523,8 @@ section {
             margin-top: 1rem;
             font-size: 2rem;
             text-transform: uppercase;
+            justify-content: center;
+            align-items: center;
         }
         p {
             margin: 1rem 0;
@@ -520,6 +532,8 @@ section {
         }
 
         .contact-info {
+            align-items: center;
+            justify-content: center;
             .contact-item {
                 display: flex;
                 align-items: center;
@@ -570,6 +584,14 @@ section {
     }
 
     .right-contact {
+        .submit{
+            border-radius: 20%;
+            padding: 5px;
+            margin: 10px;
+            background-color: var(--color-grey-4);
+            color: #b2becd;
+            background-size: 20px;
+        }
         flex: 3;
         margin-left: 3rem;
         .input-control {

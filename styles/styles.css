@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-primary: #191d2b;
+  --color-primary: #000000;
   --color-secondary: #2a58da;
   --color-white: #FFFFFF;
   --color-black: #000;
@@ -279,6 +279,7 @@ section {
 }
 
 .header-content .right-header .name span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: var(--color-secondary);
 }
 
@@ -442,19 +443,27 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 75%;
+  width: 90%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 60%;
+  width: 85%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 87%;
+  width: 90%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 70%;
+  width: 75%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .mongodb {
+  width: 80%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .mysql {
+  width: 80%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .data-science {
@@ -499,6 +508,12 @@ section {
   position: relative;
   padding-left: 3rem;
   border-left: 1px solid var(--color-grey-5);
+}
+
+.timeline .timeline-item .list {
+  color: var(--color-grey-2);
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .timeline .timeline-item .tl-icon {
@@ -755,11 +770,26 @@ section {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-content-con .left-contact p {
   margin: 1rem 0;
   line-height: 2rem;
+}
+
+.contact-content-con .left-contact .contact-info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-content-con .left-contact .contact-info .contact-item {
@@ -850,6 +880,15 @@ section {
       -ms-flex: 3;
           flex: 3;
   margin-left: 3rem;
+}
+
+.contact-content-con .right-contact .submit {
+  border-radius: 20%;
+  padding: 5px;
+  margin: 10px;
+  background-color: var(--color-grey-4);
+  color: #b2becd;
+  background-size: 20px;
 }
 
 .contact-content-con .right-contact .input-control {
