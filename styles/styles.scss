@@ -189,22 +189,31 @@ section {
         flex-direction: column;
         justify-content: center;
         padding-right: 18rem;
-        .typewriter h1 {
-            overflow: hidden;
-            border-right: .15em solid rgb(0, 4, 255);
-            margin: 0 auto;
-            animation: 
-            typing 3.5s steps(40, 3nd),
-            blink-caret .75s step-end infinite;
+        .typewrite {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            align-items: center;
+            color: var(--color-grey0);
+            span{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: var(--color-secondary);
+            }
         }
-        @keyframes typing {
-            from {width: 0}
-            to {width: 100%}
-        }
-        @keyframes blink-caret {
-            from, to {border-color: transparent}
-            50% {border-color: orange;}
-        }
+        // .typewriter h1 {
+        //     overflow: hidden;
+        //     border-right: .15em solid rgb(0, 4, 255);
+        //     margin: 0 auto;
+        //     animation: 
+        //     typing 3.5s steps(40, 3nd),
+        //     blink-caret .75s step-end infinite;
+        // }
+        // @keyframes typing {
+        //     from {width: 0}
+        //     to {width: 100%}
+        // }
+        // @keyframes blink-caret {
+        //     from, to {border-color: transparent}
+        //     50% {border-color: orange;}
+        // }
         .name{
             font-size: 3rem;
             span{

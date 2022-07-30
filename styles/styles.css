@@ -275,48 +275,17 @@ section {
   padding-right: 18rem;
 }
 
-.header-content .right-header .typewriter h1 {
-  overflow: hidden;
-  border-right: 0.15em solid #0004ff;
-  margin: 0 auto;
-  -webkit-animation: typing 3.5s steps(40, 3nd), blink-caret 0.75s step-end infinite;
-          animation: typing 3.5s steps(40, 3nd), blink-caret 0.75s step-end infinite;
+.header-content .right-header .typewrite {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-grey0);
 }
 
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+.header-content .right-header .typewrite span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--color-secondary);
 }
 
 .header-content .right-header .name {
