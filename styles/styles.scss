@@ -189,6 +189,22 @@ section {
         flex-direction: column;
         justify-content: center;
         padding-right: 18rem;
+        .typewriter h1 {
+            overflow: hidden;
+            border-right: .15em solid rgb(0, 4, 255);
+            margin: 0 auto;
+            animation: 
+            typing 3.5s steps(40, 3nd),
+            blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from {width: 0}
+            to {width: 100%}
+        }
+        @keyframes blink-caret {
+            from, to {border-color: transparent}
+            50% {border-color: orange;}
+        }
         .name{
             font-size: 3rem;
             span{
@@ -294,9 +310,10 @@ section {
                 display: flex;
                 flex-wrap: wrap;
                 border-radius: 10px;
-                .fa-size{
-                    width: 100px;
-                    height: 100px;
+                align-items: center;
+                justify-content: center;
+                i {
+                    font-size: 7rem;
                 }
 
             }

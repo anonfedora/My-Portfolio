@@ -275,6 +275,50 @@ section {
   padding-right: 18rem;
 }
 
+.header-content .right-header .typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid #0004ff;
+  margin: 0 auto;
+  -webkit-animation: typing 3.5s steps(40, 3nd), blink-caret 0.75s step-end infinite;
+          animation: typing 3.5s steps(40, 3nd), blink-caret 0.75s step-end infinite;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 .header-content .right-header .name {
   font-size: 3rem;
 }
@@ -426,6 +470,16 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-stats .progress-bars .progress-bar .skill-holder i {
+  font-size: 7rem;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con {
